@@ -56,7 +56,6 @@ body *  {
 
 #profile p {
     color: #3e1f11fd;
-    /* background-color: #00000093; */
     font-weight: 900;
     line-height: 24px;
     margin-top: 8px;
@@ -72,11 +71,33 @@ body *  {
 /* links */
 
 ul {
+    position: relative;
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 24px 0;
+}
+
+li .whatsap::before {
+    position: absolute;
+    content: url(../assets/icon-whatsap.svg);
+    top: 15px;
+    left: 25px;
+}
+
+li .instagram::before {
+    position: absolute;
+    content: url(../assets/icon-insta.svg);
+    top: 15px;
+    left: 25px;
+}
+
+li .tiktok::before {
+    position: absolute;
+    content: url(../assets/icon-tiktok.svg);
+    top: 15px;
+    left: 25px;
 }
 
 ul li a {
